@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Netmax</title>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		
+		<title>Netmax</title>
+	</head>
+	<body>
+		<header>
+			<div class="contenedor">
+				<h2 id="logotipo">Netmax</h2>
+				<span id="hora"></span>
+				<nav>
+					<a href="index.html">Inicio</a>
+					<a href="#recomendado">Peliculas recomendadas</a>
+					<a href="#planes">Planes</a>
+					<a href="#usuario">Crea tu usuario</a>
+					<a href="#ingresar">Ingresar</a>
+				</nav>
+			</div>
+		</header>
+		<section class="principal">
+			<div class="pelicula-principal">
+				<div class="contenedor">
+					<h3 class="titulo">EL PRACTICANTE</h3>
+					<p class="descripcion">
+						Un extraño accidente. Una mente trastornada. <br>Todo vale a la hora de mantener a quien se ama cerca... bien cerca.
+					</p>
+					<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+					<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+				</div>
+			</div>
+		</section>	
+		<section>
+			<h1 id="recomendado">Peliculas recomendadas</h1>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner" role="listbox">
+				  <div class="carousel-item active">
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Clickeame!">
+					<img class="d-block" src="img/amordecalendario.png" id="amor-de-calendario" data-src="holder.js/900x400?theme=social" alt="pelicula" data-holder-rendered="true" style="width: 900px; height: 400px;"></a></li>
+				  </div>
+				  <div class="carousel-item">
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Clickeame!"></a>
+					<img class="d-block" src="img/enolaholmes.png" id="enola-holmes" data-src="holder.js/900x400?theme=industrial" alt="pelicula" data-holder-rendered="true" style="width: 900px; height: 400px;"></a></li>
+				  </div>
+				  <div class="carousel-item">
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Clickeame!">
+				 	<img class="d-block" src="img/annewithane.png" id="anne-with-an-e" data-src="holder.js/900x400?theme=industrial" alt="pelicula" data-holder-rendered="true" style="width: 900px; height: 400px;"></a></li>
+				  </div>
+				  <div class="carousel-item">
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Clickeame!"></a>
+					<img class="d-block" src="img/it.png" id="it" data-src="holder.js/900x400?theme=industrial" alt="pelicula" data-holder-rendered="true" style="width: 900px; height: 400px;"></a></li>
+				</div>
+				<div class="carousel-item">
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Clickeame!"></a>
+					<img class="d-block" src="img/merli.png" id="merli" data-src="holder.js/900x400?theme=industrial" alt="pelicula" data-holder-rendered="true" style="width: 900px; height: 400px;"></a></li>
+				</div>
+				<div class="carousel-item">
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Clickeame!"></a>
+					<img class="d-block" src="img/lucifer.png" id="lucifer" data-src="holder.js/900x400?theme=industrial" alt="pelicula" data-holder-rendered="true" style="width: 900px; height: 400px;"></a></li>
+				</div>
+				</div>				
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>			  
+			</section>
+		</section>		
+	    <section class="pricing py-5">
+			<h1 id="planes" class="titulo-planes">Planes</h1>
+	    <div class="container">
+	      <div class="row">
+	        <!-- Básico -->
+	        <div class="col-lg-4">
+	          <div class="card mb-5 mb-lg-0">
+	            <div class="card-body">
+	              <h5 class="card-title text-muted text-uppercase text-center">Básico</h5>
+	              <h6 class="card-price text-center">$199<span class="period">/mes</span></h6>
+	              <hr>
+	              <ul class="fa-ul">
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Una sola pantalla a la vez</li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Descarga de videos en un solo dispositivo</li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Uso ilimitado de la plataforma</li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Definicion estándar</li>
+	              </ul>
+	              <button type="button" class="btn btn-block btn-primary text-uppercase" id="boton1" onclick="eleccionDePlan()">Elegir</button>
+	            </div>
+	          </div>
+	        </div>
+	        <!-- Estándar -->
+	        <div class="col-lg-4">
+	          <div class="card mb-5 mb-lg-0">
+	            <div class="card-body">
+	              <h5 class="card-title text-muted text-uppercase text-center">Estándar (RECOMENDADO)</h5>
+	              <h6 class="card-price text-center">$319<span class="period">/mes</span></h6>
+	              <hr>
+	              <ul class="fa-ul">
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Dos pantallas a la vez</strong></li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Full HD disponible (1080p)</li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Descarga de videos en dos dispositivos distintos</li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Uso ilimitado de la plataforma</li>
+	              </ul>
+				  <button type="button" class="btn btn-block btn-primary text-uppercase" id="boton2" onclick="eleccionDePlan()">Elegir</button>
+	            </div>
+	          </div>
+	        </div>
+	        <!-- Premium -->
+	        <div class="col-lg-4">
+	          <div class="card">
+	            <div class="card-body">
+	              <h5 class="card-title text-muted text-uppercase text-center">Premium</h5>
+	              <h6 class="card-price text-center">$449<span class="period">/mes</span></h6>
+	              <hr>
+	              <ul class="fa-ul">
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Cuatro pantallas a la vez</strong></li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Full HD (1080p) y Ultra HD (4k)</li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Descarga de videos en cuatro dispositivos distintos</li>
+	                <li><span class="fa-li"><i class="fas fa-check"></i></span>Uso ilimitado de la plataforma</li>
+	              </ul>
+	              <button type="button" value="Premium" id="boton" class="btn btn-block btn-primary text-uppercase" onclick="eleccionDePlan()">Elegir</button>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+		</section>
+		<div id="container-fluid">
+			<h1 id="usuario" class="titulo-usuario"> Crear nuevo usuario </h1>
+			<form action="#" metod="post" onsubmit="return validar ();" id="miFormulario">
+				<label>Nombre:</label>
+				<input type="text" id="txtnombre" class="datos" placeholder="Tu nombre" required>
+				<label>Apellido:</label>
+				<input type="text" id="txtapellido" class="datos" placeholder="Tu apellido" required>
+				<label>Usuario:</label> 
+				<input type="text" id="txtusuario" class="datos" placeholder="Tu usuario" required>   
+				<label>Contraseña:</label> 
+				<input type="password" id="txtcontraseña" class="datos" placeholder="Tu contraseña (debe tener entre 8 y 16 caracteres)" required>   
+				<label>Correo electrónico:</label>
+				<input type="text" id="txtcorreo" class="datos" placeholder="ej: micorreo@correo.com" required>
+				<input type="submit" value="Enviar" id="enviar" onclick="NuevoUsuarioNetmax()">
+				<input type="button" value="Limpiar formulario" id="resetear" onclick="LimpiarFormulario()">				
+			</form>
+		</div>
+		<div id="ingreso">
+			<h1 id="ingresar"> Ingresar </h1>
+			<form name=formclave>
+				<label class="usuario">Usuario:</label> 
+				<input type="text" class="usuario"> 
+				<label class="contraseña">Contraseña:</label> 
+				<input type="password" class="contraseña" name="clave">
+				<input type="submit" value="Enviar" class="enviar">
+			</form>
+		</div>
+		<div>
+			<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+				<i class="fas fa-arrow-circle-up"></i>
+			</a>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="js/bootstrap.js"></script>		
+	</body>
+</html>

@@ -1,0 +1,429 @@
+/*INDEX*/
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fondo);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 30px 0;
+  background: var(--fondo);
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #logotipo {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #FFF;
+}
+
+#hora {
+  color: #e50914;
+  font-size: 20px;
+}
+
+/* PELICULA PRINCIPAL */
+
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(img/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-top:18.75em;
+}
+
+.pelicula-principal .titulo {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+  background: rgba(0,0,0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+  background: #fff;
+  color: #000;
+}
+
+.pelicula-principal .boton i {
+  margin-right: 1.25em;
+}
+
+/*TITULO Y CONTROLES*/
+
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-titulo-controles h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+
+/*CONTENEDOR PRINCIPAL Y FLECHAS*/
+
+img {
+  height: 180px;
+  width: 250px;
+}
+
+.peliculas-recomendadas {
+  margin-bottom: 70px;
+  color: #fff;
+  position: relative;
+  left: 35px;
+  margin: auto;
+  
+}
+
+section {
+  background: #141414;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+  display: flex;
+  align-items: center;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda, 
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0,0,0,0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+  background: rgba(0,0,0,0.9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+  left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  right: 80px;
+}
+
+/*PLANES*/
+
+section.pricing {
+   background: var(--fondo);
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  background-color: #141414;
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+.btn {
+  background-color: #141414;
+}
+
+
+.btn:hover {
+  background-color: #e50914 !important;
+}
+
+
+/* CREAR USUARIO */
+
+
+#container-fluid{
+  background-color: var(--fondo);
+
+}
+
+h1{
+  padding-top: 30px;
+  padding-bottom: 0px;
+  border-bottom: 2px solid #e50914;
+  color: #e50914;
+  margin: 0 40px;
+  text-align: center;
+}
+
+form{
+  border-radius:10px;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  padding: 30px;
+}
+
+label{
+  font-size:18px;
+}
+
+label {
+  color: #fff;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  border-radius:10px;
+  padding-left: 10px;
+  font-size:16px;
+  font-family: 'Lato', sans-serif;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #e50914;
+  margin-left: 45px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+#mensaje{
+  height: 200px;
+  padding-top: 15px;
+}
+
+select{
+  width: 500px;
+  height: 40px;
+  border-radius:10px;
+  padding-left: 10px;
+  font-size:14px;
+}
+
+#enviar{
+  font-size:20px;
+  height: 50px;
+  width: 250px;
+  margin:20px 10px 0px 0px;
+  color: #000;
+}
+#enviar:hover{
+  background-color: #e50914 !important;
+  
+}
+
+#resetear{
+  font-size:20px;
+  height: 50px;
+  width: 250px;
+  margin:20px 0px;
+  color: #000;
+}
+#resetear:hover{
+  background-color: #e50914 !important;
+  
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula-principal {
+    font-size: 14px;
+  }
+
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+}
+
+#carrusel{
+  margin: 30px auto;
+}
+   #carrusel .item{
+       background: none;
+       height: 300px;
+   }
+   #carrusel .item img{
+       min-width: 200px;
+       height: auto;
+   } 
+
+img {
+  width: 900px;
+  height: 600px !important;
+  position: relative;
+  left: 300px;
+}
+
+#carouselExampleIndicators {
+  margin-top: 100px;
+  background-color: #141414;
+}
+
+.titulo-planes {
+  margin-bottom: 100px;
+}
+
+.titulo-usuario {
+  margin-bottom: 50px;
+}
+
+/*Ingresar usuario*/
+
+#ingreso {
+  background-color: #141414;
+
+}
+
+.enviar {
+  display: flex;
+  position: relative;
+  left: 150px;
+  margin-top: 20px;
+  font-size:20px;
+  height: 50px;
+  width: 250px;
+  margin:20px 10px 0px 0px;
+  color: #000;
+  justify-content: center;
+  
+}
+
+.enviar:hover{
+  background-color: #e50914 !important;
+  
+}
+
+
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba{
+  font-size:20px;
+  color: #e50914;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+ 
+}
